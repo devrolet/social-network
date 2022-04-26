@@ -1,20 +1,22 @@
 <div class="container">
     <div class="form-container">
         <div class="title">Login</div>
-        <form>
-            <mat-form-field appearance="standard">
+        <!-- bind data to loginForm -->
+        <form [formGroup]="loginForm">
+            <mat-form-field appearance="outline">
                 <mat-label>Email</mat-label>
-                <input matInput>
+                <input matInput formControlName="email">
             </mat-form-field>
-            <mat-form-field appearance="standard">
+            <mat-form-field appearance="outline">
                 <mat-label>Password</mat-label>
-                <input type="password" matInput>
+                <input type="password" matInput formControlName="password">
             </mat-form-field>
         </form>
+        {{ loginForm.value | json }}
         <div class="buttons-container">
             <button mat-raised-button class="login-button">Login</button>
             OR
-            <button mat-raised-button>Create Account</button>
+            <button routerLink="/create-account" mat-raised-button>Create Account</button>
         </div>
     </div>
 </div>
