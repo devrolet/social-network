@@ -9,6 +9,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { MaterialFileInputModule } from 'ngx-material-file-input';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 // Angular Material Imports
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -45,7 +47,9 @@ import { PostsComponent } from './pages/posts/posts.component';
     MatIconModule,
     MatMenuModule,
     MatCardModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    MaterialFileInputModule,
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
