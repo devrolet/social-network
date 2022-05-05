@@ -3,6 +3,7 @@ import { AngularFireStorage } from '@angular/fire/compat/storage';
 import { Router } from '@angular/router';
 import { UserService } from 'src/app/services/user.service';
 import { finalize } from 'rxjs/operators';
+import { PostService } from 'src/app/services/post.service';
 
 
 @Component({
@@ -15,7 +16,8 @@ export class PostsComponent implements OnInit {
   constructor(
     public userService: UserService, 
     private router: Router,
-    private storage: AngularFireStorage) { }
+    private storage: AngularFireStorage,
+    public postService: PostService) { }
 
   ngOnInit(): void {
     if(this.userService.user == undefined || this.userService.user == null){
@@ -26,9 +28,17 @@ export class PostsComponent implements OnInit {
         this.router.navigate(['/login']);
       }
     }
+    this.postService.getPosts()
+      .then((res: any) => {
+        this.posts = res;
+      }).catch((err) => {
+        console.log(err);
+      })
   }
 
   selectedFile: any;
+  text = '';
+  posts: Array<any> = [];
 
   onFileSelected(event: any) {
     this.selectedFile = event.target.files[0];
@@ -38,6 +48,21 @@ export class PostsComponent implements OnInit {
     if(this.selectedFile != undefined || this.selectedFile != null) {
       this.uploadImage().then((imageURL) => {
         console.log(imageURL);
+        let postObj = {
+          username: this.userService.user.username,
+          text: this.text,
+          imageURL: imageURL,
+          likes: [],
+          comments: []
+        };
+        this.posts.push(postObj);
+        this.postService.saveNewPost(postObj)
+          .then((res) => {
+            console.log(res)  
+          })
+          .catch((err) => {
+            console.log(err)
+          })
       }).catch((err) => {
         console.log(err);
       })

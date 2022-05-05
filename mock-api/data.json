@@ -13,5 +13,22 @@
       "id": 2
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "username": "chillychill",
+      "text": "This is the first post for this social networth.",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651792609509?alt=media&token=d5c25ed1-c867-4c9c-aaf2-f8f7fe905821",
+      "likes": [],
+      "comments": [],
+      "id": 1
+    },
+    {
+      "username": "chillychill",
+      "text": "Another successful video shoot. We're getting good at this.",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651793579049?alt=media&token=e85bc778-9662-45c5-9f70-774e450b8039",
+      "likes": [],
+      "comments": [],
+      "id": 2
+    }
+  ]
 }
