@@ -22,4 +22,12 @@ export class PostsComponent implements OnInit {
     }
   }
 
+  postSchema = {
+    username: '',
+    imageURL: '',
+    text: '',
+    likes: [],
+    comments: [{username: '', comment: ''}]
+  }
+
 }

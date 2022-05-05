@@ -1,1 +1,46 @@
-<p>posts works!</p>
+<div class="container">
+    <div class="content-wrapper">
+        <mat-form-field appearance="fill">
+            <textarea matInput cdkTextareaAutosize cdkAutosizeMinRows="5" placeholder="What's on your mind?"></textarea>
+        </mat-form-field>
+        <div class="new-post-actions-container">
+            <button mat-raised-button class="post-button">Post</button>
+        </div>
+        <mat-card class="post-card">
+            <mat-card-header>
+                <mat-card-title>
+                    Chad Hall
+                </mat-card-title>
+            </mat-card-header>
+            <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+            <mat-card-content>
+                <p>What a nice dog!!</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button class="like-button" mat-icon-button disableRipple="true">
+                    <mat-icon>favorite_border</mat-icon>
+                </button> <span>100 liked it</span>
+            </mat-card-actions>
+            <div class="comments-container">
+                <div class="comments">
+                    <div class="title">
+                        Comments
+                    </div>
+                    <p><b>James:</b> Wow!! That IS a nice dog!!</p>
+                </div>
+                <div class="comments-input">
+                    <mat-form-field class="comment-form-field">
+                        <input matInput type="text" placeholder="Add a comment">
+                    </mat-form-field>
+                    <button class="comment-button" mat-button>Comment</button>
+                </div>
+            </div>
+        </mat-card>
+
+
+
+
+
+    </div>
+</div>
+  
