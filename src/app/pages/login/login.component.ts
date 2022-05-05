@@ -38,6 +38,7 @@ export class LoginComponent implements OnInit {
             console.log('matched');
             this.snackBar.open('Logged In Successfully', 'OK');
             this.userService.user = res[0];
+            localStorage.setItem('user', JSON.stringify(res[0]));
             this.router.navigate(['/posts']);
           }else {
             console.log('Incorrect Password');

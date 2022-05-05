@@ -20,6 +20,7 @@ export class TopnavComponent implements OnInit {
   logout() {
     this.userService.user = undefined;
     this.router.navigate(['/login']);
+    localStorage.clear();
     this.snackBar.open('Logged Out', 'OK');
   }
 
