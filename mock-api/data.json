@@ -1,0 +1,17 @@
+{
+  "users": [
+    {
+      "email": "chethill@email.com",
+      "username": "chillychill",
+      "password": "newpass",
+      "id": 1
+    },
+    {
+      "email": "anotherone@email.com",
+      "username": "DJ Valid",
+      "password": "passwords",
+      "id": 2
+    }
+  ],
+  "posts": []
+}
