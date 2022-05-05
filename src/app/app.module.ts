@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http'
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 // Application Imports
 import { LoginComponent } from './pages/login/login.component';
@@ -32,7 +33,8 @@ import { CreateAccountComponent } from './pages/create-account/create-account.co
     MatInputModule,
     ReactiveFormsModule, 
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
