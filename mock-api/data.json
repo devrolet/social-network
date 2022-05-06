@@ -29,6 +29,30 @@
       "likes": [],
       "comments": [],
       "id": 2
+    },
+    {
+      "username": "chillychill",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651795450424?alt=media&token=52d5a447-bc6d-448c-91a9-a0e9f36595aa",
+      "likes": [],
+      "comments": [],
+      "id": 3
+    },
+    {
+      "username": "DJ Valid",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651795525167?alt=media&token=a8ac31ab-303d-437e-9b1c-ee303626a29e",
+      "likes": [],
+      "comments": [],
+      "id": 4
+    },
+    {
+      "username": "DJ Valid",
+      "text": "Hello World",
+      "imageURL": "",
+      "likes": [],
+      "comments": [],
+      "id": 5
     }
   ]
 }
