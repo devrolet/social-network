@@ -18,7 +18,9 @@
       "username": "chillychill",
       "text": "This is the first post for this social networth.",
       "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651792609509?alt=media&token=d5c25ed1-c867-4c9c-aaf2-f8f7fe905821",
-      "likes": [],
+      "likes": [
+        2
+      ],
       "comments": [],
       "id": 1
     },
@@ -50,9 +52,45 @@
       "username": "DJ Valid",
       "text": "Hello World",
       "imageURL": "",
-      "likes": [],
+      "likes": [
+        2
+      ],
       "comments": [],
       "id": 5
+    },
+    {
+      "username": "DJ Valid",
+      "text": "new stream posted",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651948661512?alt=media&token=5f218612-b59a-4d5d-a8da-59ffa3b831a9",
+      "likes": [],
+      "comments": [
+        {
+          "username": "DJ Valid",
+          "comment": "We gotta remove this post broseph"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "username": "DJ Valid",
+      "text": "new post to see how this works",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651949411508?alt=media&token=ff332ace-1e69-4418-8f08-3e25fefeb853",
+      "likes": [],
+      "comments": [
+        {
+          "username": "DJ Valid",
+          "comment": "this is dope"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "username": "DJ Valid",
+      "text": "Another successful video shoot.",
+      "imageURL": "https://firebasestorage.googleapis.com/v0/b/social-networth.appspot.com/o/images%2F1651950003001?alt=media&token=47e8cce4-1ac9-49be-aafc-a667c4895929",
+      "likes": [],
+      "comments": [],
+      "id": 8
     }
   ]
 }
