@@ -37,7 +37,7 @@ export class PostsComponent implements OnInit {
           this.commentText.push("");
         }
       }).catch((err) => {
-        console.log(err);
+        // console.log(err);
       })
   }
 
@@ -51,10 +51,10 @@ export class PostsComponent implements OnInit {
   }
 
   post() {
-    this.snackbar.open('Creating the post...', '', {duration: 15000});
+    // this.snackbar.open('Creating the post...', '', {duration: 15000});
     if(this.selectedFile != undefined || this.selectedFile != null) {
       this.uploadImage().then((imageURL) => {
-        console.log(imageURL);
+        // console.log(imageURL);
         let postObj = {
           username: this.userService.user.username,
           text: this.text,
@@ -65,15 +65,15 @@ export class PostsComponent implements OnInit {
         this.posts.push(postObj);
         this.postService.saveNewPost(postObj)
           .then((res) => {
-            console.log(res);
-            this.snackbar.open('Posted Successfully', 'ok');
+            // console.log(res);
           })
           .catch((err) => {
             console.log(err);
           });
           this.selectedFile = undefined;
+          this.text = '';
       }).catch((err) => {
-        console.log(err);
+        // console.log(err);
       });
     } else {
       let postObj = {
@@ -86,11 +86,11 @@ export class PostsComponent implements OnInit {
       this.posts.push(postObj);
       this.postService.saveNewPost(postObj)
         .then((res) => {
-          console.log(res);
+          // console.log(res);
           this.snackbar.open('Posted Successfully', 'ok'); 
         })
         .catch((err) => {
-          console.log(err);
+          // console.log(err);
         });
     }
   }
@@ -107,7 +107,7 @@ export class PostsComponent implements OnInit {
           let imageURL = fileRef.getDownloadURL();
           imageURL.subscribe((url: any) => {
             if(url) {
-              console.log(url);
+              // console.log(url);
               resolve(url);
             }
           });
@@ -115,7 +115,7 @@ export class PostsComponent implements OnInit {
       ).subscribe(
         (url) => {
           if(url){
-            console.log(url);
+            // console.log(url);
           }
         }
       )
@@ -132,9 +132,9 @@ export class PostsComponent implements OnInit {
         }
         this.postService.updateLikes(this.posts[i])
           .then((res) => {
-            console.log(res);
+            // console.log(res);
           }).catch((err) => {
-            console.log(err);
+            // console.log(err);
           })
       }
     }
